@@ -8,11 +8,23 @@ import { Game } from '../game';
 })
 export class GamesComponent implements OnInit {
 
-  game: Game = {
-    id: 0,
-    name: 'Bad Game Number 50',
-    platform: 'PC'
-  };
+  games: Game[] = [
+    {
+      title: 'A Short Hike',
+      platform: 'PC',
+      completed_date: '2020-09-03'
+    },
+    {
+      title: 'Astral Chain',
+      platform: 'Switch',
+      completed_date: '2019-09-11'
+    },
+    {
+      title: 'The Last of Us',
+      platform: 'PlayStation 3',
+      completed_date: '2020-08-01'
+    }
+  ];
 
   constructor() { }
 

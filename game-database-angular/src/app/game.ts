@@ -1,5 +1,5 @@
 export interface Game {
-  id: number;
-  name: String;
+  title: String;
   platform: String;
+  completed_date: String;
 }

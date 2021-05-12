@@ -1,16 +1,19 @@
-<h2>{{game.name}} Details</h2>
-<div>
-  <span>
-    id:
-  </span> {{game.id}}
-</div>
-<div>
-  <span>
-    Name:
-  </span> {{game.name}}
-</div>
-<div>
-  <span>
-    Platform:
-  </span> {{game.platform}}
+<h2>Database of Games</h2>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Platform</th>
+        <th>Date Completed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let game of games">
+        <td>{{game.title}}</td>
+        <td>{{game.platform}}</td>
+        <td>{{game.completed_date}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
