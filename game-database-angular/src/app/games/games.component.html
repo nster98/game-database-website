@@ -1,19 +1,11 @@
-<h2>Database of Games</h2>
-<div class="container">
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Platform</th>
-        <th>Date Completed</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor = "let game of games">
-        <td>{{game.title}}</td>
-        <td>{{game.platform}}</td>
-        <td>{{game.completed_date}}</td>
-      </tr>
-    </tbody>
-  </table>
+<h1>Database of Games</h1>
+<div class="user_games">
+  <li *ngFor = "let game of games" class = "user_game_col back_primary shadow_box">
+    <div class="info back_primary">
+      <h2 class = "game_title_text">{{game.title}}</h2>
+      <h3 class = "platform_text">{{game.platform}}</h3>
+      <div>Date Completed: {{game.completed_date}}</div>
+      <div>Time: {{game.time_taken}} </div>
+    </div>
+  </li>
 </div>

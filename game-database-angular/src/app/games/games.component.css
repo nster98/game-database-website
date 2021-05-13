@@ -1,0 +1,32 @@
+.shadow_box {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.back_primary {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
+.user_game_col {
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  vertical-align: top;
+  word-spacing: normal;
+}
+
+.info {
+  color: #000000;
+}
+
+.game_title_text {
+  color: #3333FF;
+}
+
+.platform_text {
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
